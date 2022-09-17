@@ -4,5 +4,9 @@ body {
 
 h1 {
   color: #abdbe3;
-  margin-left: 500px;
+  margin-left: 300px;
+}
+
+p{
+color: blue;
 }
