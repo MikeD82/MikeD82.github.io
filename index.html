@@ -270,7 +270,7 @@
         <div class="form-container">
           <h2>Contact Us</h2>
           <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="E-Mail" />
+          <input type="email" placeholder="e-mail" />
           <textarea
             cols="30"
             rows="6"
@@ -280,8 +280,9 @@
         </div>
       </div>
     </section>
+    
     <footer id="footer" >
-      <h2>&copy; id="currentYear" >MDGS</h2>
+      <h2 id="currentYear" </h2>
     </footer>
   </body>
   <!-- 
@@ -318,7 +319,8 @@
   </script>
   <script>
     var cyear = new Date().getFullYear();
-    document.getElementById("currentYear").innerHTML = cyear;
+    var str = cyear +" MDMS";
+    document.getElementById("currentYear").innerHTML ='\u00A9 ' + cyear +" MDMS";
     </script>
 </html>
 

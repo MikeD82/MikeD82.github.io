@@ -61,7 +61,7 @@ body {
   width: 100%;
   background: #2a486f;
   color: #FFFFFF;
-  opacity: 0.95;
+  opacity: 0.97;
   height: 60px;
   z-index: 12;
 }
@@ -110,7 +110,7 @@ body {
   height: 50vh;
   background: linear-gradient(
       rgba(60, 109, 170, 0.050),
-      rgba(25, 46, 71, 0.220)
+      rgba(25, 46, 71, 0.200)
     ),
     url("https://i.postimg.cc/wT3TQS3V/header-image2.jpg");
   background-size: cover;
@@ -441,7 +441,6 @@ body {
 
 #footer h2 {
   text-align: right;
-  
   font-size: 1.0rem;
   padding: 2.6rem;
   font-weight: 350;
@@ -451,9 +450,9 @@ body {
 
 /* ......../ media query /.......... */
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {   /* 768px*/
   .navbar {
-    opacity: 0.95;
+    opacity: 0.975;
   }
 
   .navbar-container input[type="checkbox"],
