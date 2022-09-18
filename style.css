@@ -82,18 +82,18 @@ body {
   list-style: none;
   margin-left: 1.5rem;
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .menu-items a {
   text-decoration: none;
-  color: #444;
+  color: #FFFFFF;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
 
 .menu-items a:hover {
-  color: #117964;
+  color: #003366;
   transition: color 0.3s ease-in-out;
 }
 
