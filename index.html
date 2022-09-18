@@ -281,7 +281,7 @@
       </div>
     </section>
     <footer id="footer">
-      <h2>Restraunt &copy; all rights reserved</h2>
+      <h2>&copy; id="currentYear" >by MDGS &copy;</h2>
     </footer>
   </body>
   <!-- 
@@ -316,8 +316,11 @@
       });
     });
   </script>
+  <script>
+    var cyear = new Date().getFullYear();
+    document.getElementById("currentYear").innerHTML = cyear;
+    </script>
 </html>
 
 
 
-Resources

@@ -59,9 +59,9 @@ body {
   box-shadow: 0px 5px 10px 0px #aaa;
   position: fixed;
   width: 100%;
-  background: #2a68a2;
+  background: #2a486f;
   color: #FFFFFF;
-  opacity: 0.90;
+  opacity: 0.95;
   height: 60px;
   z-index: 12;
 }
@@ -93,7 +93,7 @@ body {
 }
 
 .menu-items a:hover {
-  color: #003366;
+  color: #14314e10;
   transition: color 0.3s ease-in-out;
 }
 
@@ -108,8 +108,8 @@ body {
 .showcase-area {
   height: 50vh;
   background: linear-gradient(
-      rgba(240, 240, 240, 0.144),
-      rgba(255, 255, 255, 0.336)
+      rgba(60, 109, 170, 0.050),
+      rgba(25, 46, 71, 0.220)
     ),
     url("https://i.postimg.cc/wT3TQS3V/header-image2.jpg");
   background-size: cover;
@@ -440,11 +440,11 @@ body {
 
 #footer h2 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   padding: 2.6rem;
   font-weight: 500;
   color: #fff;
-  background: rgb(65, 65, 65);
+  background: rgb(25, 46, 71);
 }
 
 /* ......../ media query /.......... */
