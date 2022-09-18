@@ -9,7 +9,7 @@
 }
 
 .html {
-  font-size: 62.5%;
+  font-size: 50.0%;
 }
 
 body {
@@ -59,17 +59,17 @@ body {
   box-shadow: 0px 5px 10px 0px #aaa;
   position: fixed;
   width: 100%;
-  background: #fff;
-  color: #000;
-  opacity: 0.85;
-  height: 50px;
+  background: #2a68a2;
+  color: #FFFFFF;
+  opacity: 0.90;
+  height: 60px;
   z-index: 12;
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 64px;
+  height: 68px;
   align-items: center;
 }
 
@@ -99,7 +99,7 @@ body {
 
 .logo {
   order: 1;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -640,7 +640,3 @@ body {
     height: 50vmax;
   }
 }
-
-
-
-Resources
