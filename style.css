@@ -462,10 +462,9 @@ body {
 
 @media (max-width: 768px) {   /* 768px*/
   .navbar {
-    opacity: 0.975;
-    
+    opacity: 0.975; 
   }
-
+  
   .navbar-container input[type="checkbox"],
   .navbar-container .hamburger-lines {
     display: block;
@@ -491,7 +490,7 @@ body {
   .navbar-container .hamburger-lines {
     display: block;
     height: 23px;
-    width: 23px; /* ustaw tu dlugosc lini krzyzyka z hamburger menu*/
+    width: 30px; /* ustaw tu dlugosc lini krzyzyka z hamburger menu*/
     position: absolute;
     top: 17px;
     left: 20px;
@@ -536,6 +535,12 @@ body {
     transition: transform 0.5s ease-in-out;
     box-shadow: 5px 0px 10px 0px #aaa;
     color: #2e3e80;
+  }
+  menu-items a {
+    text-decoration: none;
+    color: #2e3e80;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
   }
 
   .navbar .menu-items li {
