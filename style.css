@@ -534,6 +534,7 @@ body {
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     box-shadow: 5px 0px 10px 0px #aaa;
+    color: #2e3e80;
   }
 
   .navbar .menu-items li {
