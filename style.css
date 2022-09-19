@@ -52,7 +52,8 @@ body {
 
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
-  display: none;
+  display:none ;
+  
 }
 
 .navbar {
@@ -69,7 +70,7 @@ body {
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 68px;
+  height: 65px;
   align-items: center;
 }
 
@@ -88,12 +89,12 @@ body {
 .menu-items a {
   text-decoration: none;
   color: #FFFFFF;
-  font-weight: 500;
+  font-weight: 400;
   transition: color 0.3s ease-in-out;
 }
 
 .menu-items a:hover {
-  color: #14314e10;
+  color: #cc9f51;
   transition: color 0.3s ease-in-out;
 }
 
@@ -377,7 +378,7 @@ body {
 
 #contact {
   padding: 5rem 0;
-  background: rgb(226, 226, 226);
+  background: #efecea;
 }
 
 .contact-container {
@@ -438,14 +439,22 @@ body {
 .form-container a {
   font-size: 1.3rem;
 }
+/*......Last Paragraph.........*/
 
-#footer h2 {
-  text-align: right;
-  font-size: 1.0rem;
-  padding: 2.6rem;
+#last-paragraph{
+  padding: 8.5rem 0;
+  background: #1d3862;
+  font-size: 1.5rem;
   font-weight: 350;
   color: #fff;
-  background: rgb(25, 46, 71);
+}
+#footer h2 {
+  text-align: right;
+  font-size: 0.8rem;
+  padding: 2.2rem;
+  font-weight: 350;
+  color: #fff;
+  background: #192e47;
 }
 
 /* ......../ media query /.......... */
@@ -514,7 +523,7 @@ body {
 
   .navbar .menu-items {
     padding-top: 100px;
-    background: #fff;
+    background: #efecea;
     height: 100vh;
     max-width: 300px;
     transform: translate(-150%);
@@ -530,6 +539,7 @@ body {
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     font-weight: 500;
+    color: #2e3e80;
   }
 
   .logo {
