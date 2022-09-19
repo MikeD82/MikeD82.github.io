@@ -490,7 +490,7 @@ body {
   .navbar-container .hamburger-lines {
     display: block;
     height: 23px;
-    width: 30px; /* ustaw tu dlugosc lini krzyzyka z hamburger menu*/
+    width: 29px; /* ustaw tu dlugosc lini krzyzyka z hamburger menu*/
     position: absolute;
     top: 17px;
     left: 20px;
@@ -536,18 +536,13 @@ body {
     box-shadow: 5px 0px 10px 0px #aaa;
     color: #2e3e80;
   }
-  menu-items a {
-    text-decoration: none;
-    color: #2e3e80;
-    font-weight: 400;
-    transition: color 0.3s ease-in-out;
-  }
-
+  
   .navbar .menu-items li {
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     font-weight: 500;
     color: #2e3e80;
+    
   }
 
   .logo {
