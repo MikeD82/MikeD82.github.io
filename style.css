@@ -121,11 +121,12 @@ body {
 
 .showcase-area {
   height: 50vh;
-  background: linear-gradient(
+  /*background: linear-gradient(
       rgba(60, 109, 170, 0.050),
       rgba(25, 46, 71, 0.200)
     ),
-    url("https://i.postimg.cc/QdxC3ywf/IMGP2997_SKADROWANE_NA170.jpg");
+    url("https://i.postimg.cc/QdxC3ywf/IMGP2997_SKADROWANE_NA170.jpg");*/
+  background: url("https://i.postimg.cc/QdxC3ywf/IMGP2997_SKADROWANE_NA170.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
