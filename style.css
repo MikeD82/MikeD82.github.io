@@ -33,7 +33,6 @@ body {
   display: inline-block;
   padding: 0.23em 0.7em;
   text-decoration: none;
-  
   cursor: pointer;
   outline:#FFFFFF;
   margin-top: 1em;
@@ -268,7 +267,7 @@ body {
 /* ......//about us//...... */
 
 #about {
-  padding: 50px 0;
+  padding: 9rem 0;
   background: #efecea;
 }
 
@@ -279,6 +278,7 @@ body {
 
 #about h2 {
   font-size: 2.3rem;
+  
 }
 
 #about p {
@@ -585,11 +585,45 @@ body {
 /*......Last Paragraph.........*/
 
 #last-paragraph{
-  padding: 8.5rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background: #1d3862;
-  font-size: 1.5rem;
+  font-family: 'Amplitude','Arial Narrow',sans-serif;
+  font-size: 1.1rem;
   font-weight: 350;
-  color: #fff;
+  color: #ffffe5;
+  line-height: 2.2;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+lp-container{
+  
+}
+
+.lp-items{ 
+  background: #1d3862;   
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+  column-width: 40px;
+}
+.lp-items li {
+  list-style: none;
+  
+}
+
+.lp-items a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+  vertical-align: middle;
+}
+
+.lp-items a:hover {
+  color: #cc9f51;
+  transition: color 0.3s ease-in-out;
 }
 #footer h2 {
   text-align: right;
