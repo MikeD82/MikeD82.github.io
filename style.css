@@ -81,10 +81,13 @@ body {
 /* wstaw 1_*/
 
 .navbar-container {
+  position:relative ;
   display:block;
-  height: 0px;
+  height: 60px;
   width: 100%;
-  background: #fff;
+  background: #1d3862;     /*zmien kolor tutaj zeby zobaczyc gdzie jest navbar-container  rgb(167, 38, 38); */
+  
+  
 }
 
 .navbar-container input[type="checkbox"] {
@@ -92,19 +95,19 @@ body {
   display: block;
   height: 21px;
   width: 27px;
-  top: 18px;
-  left: 0.0rem;
+  top: 19px;
+  left: 9.0rem;
   z-index: 5;
   opacity: 0;
 }
 
 .navbar-container .hamburger-lines {
-  
+  display: block;
   height: 21px; /* 23*/
   width: 27px; /*  dla 23height jest29 ustaw tu dlugosc lini krzyzyka z hamburger menu*/
-  position: absolute;
+  position: relative;
   top: 18px;
-  /*left: 10.0 rem;*/
+  left: 9.0rem;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -224,7 +227,7 @@ body {
 
 .logo {
   order: 1;
-  font-family: "Chivo Black", sans-serif;
+  font-family:  'Helvetica','Arial', sans-serif; /*'Brygada 1918', serif; 'Helvetica',*/  
   font-weight: 600;
   font-size: 2.0rem;
   margin-bottom: 0.5rem;
@@ -232,6 +235,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 5px;
+  left: 15px;
 }
 
 
@@ -267,7 +271,7 @@ body {
 /* ......//about us//...... */
 
 #about {
-  padding: 9rem 0;
+  padding: 4rem 0;
   background: #efecea;
 }
 
@@ -588,7 +592,7 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: #1d3862;
-  font-family: 'Amplitude','Arial Narrow',sans-serif;
+  font-family: 'Arial Narrow','Amplitude' ,sans-serif;
   font-size: 1.1rem;
   font-weight: 350;
   color: #ffffe5;
@@ -641,10 +645,6 @@ lp-container{
     opacity: 0.975; 
   }
   
-  .navbar-container input[type="checkbox"],
-  .navbar-container .hamburger-lines {
-    display: block;
-  }
 
   .navbar-container {
     display: block;
@@ -655,10 +655,10 @@ lp-container{
   .navbar-container input[type="checkbox"] {
     position: absolute;
     display: block;
-    height: 32px;
-    width: 30px;
-    top: 20px;
-    left: 20px;
+    height: 21px;
+    width: 27px;
+    top: 18px;
+    left: 9.0rem;
     z-index: 5;
     opacity: 0;
   }
@@ -667,9 +667,9 @@ lp-container{
     display: block;
     height: 21px; /* 23*/
     width: 27px; /*  dla 23height jest29 ustaw tu dlugosc lini krzyzyka z hamburger menu*/
-    position: absolute;
+    position: relative;
     top: 18px;
-    left: 10.0 rem;
+    left: 9.0 rem;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -766,6 +766,8 @@ lp-container{
 }
 
 @media (max-width: 500px) {
+ 
+  /*UWAGA !! ustawienie font-size: 65% zmienia w dziwny sposób rozmiar czcionki dla loga zmniejszajac odleglosc do hamburger menu a potem czcionka jes ustawiana na ponow duza i jedno nachodzi na drugie*/ 
   html {
     font-size: 65%;
   }
@@ -773,6 +775,37 @@ lp-container{
   .navbar .menu-items li{
       font-size: 1.6rem;
   }
+
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 21px;
+    width: 27px;
+    top: 18px;
+    left: 9.0rem;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 21px; /* 23*/
+    width: 27px; /*  dla 23height jest29 ustaw tu dlugosc lini krzyzyka z hamburger menu*/
+    position: relative;
+    top: 18px;
+    left: 9.0 rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
 
   .testimonial-container {
     flex-direction: column;
@@ -806,14 +839,14 @@ lp-container{
   .logo {
     position: absolute;
     top: 06px;
-    right: 15px;
-    font-size: 3rem;
+    
   }
 
   .navbar .menu-items li {
     margin-bottom: 2.5rem;
     font-size: 1.8rem;
     font-weight: 500;
+    
   }
 }
 
