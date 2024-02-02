@@ -7,11 +7,9 @@
     <meta name="keywords" content="MDRS Michal Drazek">
     <meta name="description" content="MDRS Geodezja i Planowanie Przestrzenne w Rzeszowie.">
     <meta name="url" content="https://www.mdrs.pl/PL/Onas">
-    <title>MDRS</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/MDGS_WebSite.styles.css" asp-append-version="true" />
-    
+    <title>MDRS</title>        
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />   
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@800&family=Chivo:wght@700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -30,6 +28,7 @@
 </head>
 
 <body>
+   
     <header>
         <nav class="navbar" id="navbar">
             <div class=" navbar-container container">                    
@@ -45,15 +44,13 @@
                     <li><a href="/Services">Usługi</a></li>
                     <li><a href="/Contact">Kontakt</a></li>
                 </ul>
-                <a href="/Index" class="h2 logo">MDRS</a>                  
+                <a href="Index" class="h2 logo">MDRS</a>                  
             </div>
         </nav>
     </header>
 
     <div class="container containerXwide">
-        <main role="main" class="pb-0">
-
-
+        
 
             <section class="containerXwide">
                 <div class="showcase-wrapper">
@@ -63,9 +60,7 @@
                     </div>
                 </div>
             </section>
-            
-            
-            
+                                    
             <section id="About" class="about-header about-textheader containerXwide">
             
                 <div class="container">
@@ -81,8 +76,7 @@
             </section>
             
             <section id="about">    
-                
-                
+                                
                 <div class="container">
                    <div class="row row-about align-items-center">
                          <div class="col-xl-5">
@@ -106,11 +100,7 @@
                    </div>
                 </div>
             
-            
-               
-            
-            
-            
+                                                               
                 <div class="containerXwide">  
                               
                     <div class="hidden">
@@ -125,9 +115,7 @@
                         </div>
             
                         </div>
-                
-            
-            
+                                        
                     <div class="hidden">
             
                         <div class="row row-about align-items-center">
@@ -157,8 +145,7 @@
                         
             
                         </div>
-            
-            
+                        
                 </div> 
                 
                 <div class="container row-about">
@@ -170,8 +157,7 @@
                      </div>
                  </div>
                   <div class="row ">
-            
-            
+                        
                         <div class="col-md-6">
                             <div class="about-BlockWrap animated-element_SR">
             
@@ -217,9 +203,7 @@
                      </div> 
                      
                   </div>
-                  <div class="row ">
-                     
-                     
+                  <div class="row ">                                          
                      
                   </div>           
                 </div>
@@ -250,18 +234,7 @@
                 </div>
             </section>
 
-
-
-
-
-
-
-
-
-           
-        
-        
-        </main>
+                                   
     </div>
 
     <section id="last-paragraph">
@@ -277,22 +250,25 @@
         </div>
     </section>
     <footer class="footer">
-        <p> &copy; @DateTime.Now.Year MDRS. All rights reserved. </p>
+        <p id="copyrightParagraph"></p>
     </footer>
     
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>  
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>  
-    <script src="~/js/site.js" asp-append-version="true"></script> 
-    <script src="~/js/navb_scroll.js"></script>  
-    <script src="~/js/hamburger_menu_open.js"></script>  
+    <script src="/lib/jquery/dist/jquery.min.js"></script>  
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>  
+    <script src="js/site.js" ></script> 
+    <script src="js/navb_scroll.js"></script>  
+    <script src="js/hamburger_menu_open.js"></script>  
 
     <!--script src="~/js/hamburger_menu_open2.js"></script> -->
 
-    <script src="~/js/animated_element.js"></script>  
+    <script src="js/animated_element.js"></script>  
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> 
-    <script src="~/js/animated_element_scroll_reveal_lib.js"></script>  
-    <script src="~/js/accordion_content_open.js"></script>
+    <script src="js/animated_element_scroll_reveal_lib.js"></script>  
+    <script src="js/accordion_content_open.js"></script>
+
+    <script src="js/copyright_paragraph.js"></script>
     
+
     
     <!--<script src="~/js/equal_about_rectangle.js"></script> -->
 
