@@ -47,8 +47,7 @@
     display: none;
 }
 
-    .navbar {
-    /*box-shadow: 0px 5px 10px 0px #2f4261;*/
+    .navbar {   
     position: fixed;
     top:0;
     width: 100%;
@@ -91,10 +90,10 @@
         transition: color 0.3s ease-in-out;
     }
 
-    .menu-items a:hover {
-     color: #cc9f51;
-     transition: color 0.3s ease-in-out;
-    }
+        .menu-items a:hover {
+            color: #cc9f51;
+            transition: color 0.3s ease-in-out;
+        }
 
 .language_EN {
     order: 1;
@@ -119,9 +118,7 @@
     margin-left:15px;
 }
 
-.navbar-container a {
-    color: #FFFFFF;
-}
+
 
 .btn-primary {
   color: #fff;
@@ -129,10 +126,13 @@
   border-color: #1861ac;
 }
 
+
+
 button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
 }
+
 
 #last-paragraph {
     padding-top: 2rem;
@@ -208,7 +208,7 @@ button.accept-policy {
 /* On screens that are 576px wide or less */
 @media screen and (max-width: 576px) {
 
-
+    
     .navbar-container {
         position: relative;
         display: block;
@@ -251,8 +251,7 @@ button.accept-policy {
             .navbar-container .hamburger-lines .line {
                 display: block;
                 height: 3px;
-                width: 100%;
-                /*border-radius: 5px;*/
+                width: 100%;                
                 background: #fff;
             }
 
@@ -271,20 +270,18 @@ button.accept-policy {
             }
 
 
-
     .navbar .menu-items {
         margin-top: 0px;
         padding-top: 120px;
         background: #1d3862;
-        height: 100vh;
-        width: 100vw;
+        height: 110vh;
+        width: 110%;
         transform: translate(-100%);
         display: flex;
         flex-direction: column;
         margin-left: -10px;
         padding-left: 40px;
-        transition: transform 0.5s ease-in-out;
-        /*box-shadow: 5px 0px 10px 0px #2e3e80;*/
+        transition: transform 0.5s ease-in-out;        
         color: #2e3e80;        
     }
 
@@ -341,12 +338,12 @@ button.accept-policy {
         overscroll-behavior: none;
     }
 
+   
     .logo {
         order: 1;
         font-family: 'Archivo','Helvetica','Arial',sans-serif; /*'Brygada 1918', serif;*/
         font-weight: 600;
-        font-size: 2.5rem;
-        /*margin-bottom: 0.5rem;*/
+        font-size: 2.5rem;        
         color: #FFFFFF;
         opacity: 1;       
         position: absolute;
@@ -389,6 +386,8 @@ button.accept-policy {
 
 
 
+
+
 .html {
     height: 100%;
     -webkit-text-size-adjust: 100%;
@@ -414,8 +413,7 @@ body {
     font-variant-numeric: lining-nums;
     /*line-height: 1.4;*/
     padding: 0.0px;
-    margin: 0;
-    padding-top: 60px;
+    margin: 0;    
     text-rendering: optimizeSpeed;        
 }
 
@@ -468,12 +466,12 @@ body {
 
 
 
-.showcase-wrapper {
+.showcase-wrapper {    
     position: relative;
-    height: 35rem;
+    height: 40rem;
     width: 100vw;
     background-color: #1d3862;
-    margin-top: -0px;
+    margin-top: 1px;
 }
 /*
     .showcase-wrapper img {
@@ -487,7 +485,7 @@ body {
 */
 
     .showcase-wrapper img {
-        height: 35rem; 
+        height: 40rem; 
         width: 100vw;
         object-position: center;
         object-fit: cover;
@@ -496,7 +494,7 @@ body {
     
 .showcase-rectangle {
     position: absolute;
-    top: 30rem;
+    top: 33.5rem;
     left: 3.8rem;
     background: #efecea;
     width: calc(0.42*100vw);
@@ -545,7 +543,6 @@ body {
 }
 
 
- 
 
    
 .about-textheader {
@@ -770,7 +767,7 @@ body {
 /* ........ Our Philosophy........... */
 
 #our-philosophy {
-    padding-top: 0rem;
+    padding-top: 6rem;
     padding-bottom: 12rem;
     background: #ffff;
 }
@@ -934,7 +931,7 @@ body {
 }
 
 #services {
-    padding-top: 4rem;
+    padding-top: 10rem;
     padding-bottom: 12rem;
     background: #ffff;
 }
@@ -1061,7 +1058,7 @@ body {
 
 /* Land-surveying services */
 #land-surveying {
-    padding-top: 4rem;
+    padding-top: 10rem;
     padding-bottom: 12rem;
     background: #ffff;
 }
@@ -1329,7 +1326,7 @@ summary {
     /*...........Spatial-Planning services...........*/
 
 #spatial-planning {
-    padding-top: 4rem;
+    padding-top: 10rem;
     padding-bottom: 12rem;
     background: #ffff;
 }
@@ -1412,7 +1409,7 @@ summary {
 }
 
 #analysis {
-    padding-top: 4rem;
+    padding-top: 10rem;
     padding-bottom: 12rem;
     background: #ffff;
 }
@@ -1482,7 +1479,7 @@ summary {
 
     /* .......Cookies Policy..........*/
     #cookies-policy {
-        padding: 4rem 0 4rem 0;
+        padding: 10rem 0 4rem 0;
     }
 
 #cookies-policy h3 {
@@ -1530,7 +1527,7 @@ li.point {
 /*.......Data Privacy Policy.........*/
 
 #data-privacy-policy {
-    padding: 4rem 0 4rem 0;
+    padding: 10rem 0 4rem 0;
 }
 
 #data-privacy-policy h3 {
@@ -1605,11 +1602,10 @@ li.bulletpointfirst::marker {
 
 /* ........ Contact Us........... */
 #contact {
-    padding-top: 4rem;
+    padding-top: 10rem;
     padding-bottom: 12rem;
     background: #efecea;
 }
-
 
 
 .head-contact h2 {
@@ -1650,7 +1646,7 @@ li.bulletpointfirst::marker {
     font-weight: 300;
     letter-spacing: 0rem;
     color: #4c4a47;
-    padding: 1rem 0 0 0; 
+    
     margin: auto;
 }
 
@@ -2013,5 +2009,6 @@ li.bulletpointfirst::marker {
         height: 50vmax;
     }
 }
+
 
 
