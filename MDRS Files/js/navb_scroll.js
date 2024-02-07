@@ -1,12 +1,20 @@
-﻿var prevScrollpos = window.pageYOffset;
-    
+﻿var prevScrollpos = window.scrollY;
+var ticking = false;
+
 window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-    } else {
-        document.getElementById("navbar").style.top = "-60px";
+    if (!ticking) {
+        window.requestAnimationFrame(function () {
+            var currentScrollPos = window.scrollY;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-60px";
+            }
+            prevScrollpos = currentScrollPos;
+            ticking = false;
+        });
+
+        ticking = true;
     }
-    prevScrollpos = currentScrollPos;
-}
+};
 

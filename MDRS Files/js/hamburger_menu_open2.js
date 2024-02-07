@@ -16,5 +16,5 @@ checkbox.addEventListener('change', function () {
         // Checkbox nie jest zaznaczony (unchecked)
         
         body.style.overflow = 'auto';
-    }
+    
 });
