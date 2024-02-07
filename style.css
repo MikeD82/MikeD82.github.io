@@ -208,14 +208,20 @@ button.accept-policy {
 /* On screens that are 576px wide or less */
 @media screen and (max-width: 576px) {
 
-    
+    .navbar {           
+        width: 100vw;        
+    }
+
     .navbar-container {
         position: relative;
         display: block;
         height: 50px;
         width: 100%;
         background: #1d3862; /*zmien kolor tutaj zeby zobaczyc gdzie jest navbar-container  rgb(167, 38, 38); */
+        padding-right: 0;
+        padding-left: 0;
     }
+    
 
         .navbar-container input[type="checkbox"] {
             position: absolute;
@@ -279,7 +285,7 @@ button.accept-policy {
         transform: translate(-100%);
         display: flex;
         flex-direction: column;
-        margin-left: -10px;
+        margin-left: 0;
         padding-left: 40px;
         margin-right: 0;
         transition: transform 0.8s ease-in-out;        
