@@ -209,7 +209,9 @@ button.accept-policy {
 @media screen and (max-width: 576px) {
 
     .navbar {           
-        width: 100vw;        
+        width: 100vw;   
+        left:0;
+        right:0;
     }
 
     .navbar-container {
