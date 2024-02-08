@@ -72,11 +72,11 @@
     align-items:center;
     background: #1d3862; /*zmien kolor tutaj zeby zobaczyc gdzie jest navbar-container  rgb(167, 38, 38); */  
 }
-/*
+
 .menu-items a:visited {
-    color: inherit; /* Dziedziczy kolor od rodzica 
+    color: inherit; /* Dziedziczy kolor od rodzica */
 }
-*/
+
 .navbar-container a:hover {
     color: #fff;
 }
@@ -129,15 +129,6 @@
     opacity: 1;
     top: 3px;
     margin-left:15px;
-}
-
-
-.logo.clicked { /* Dodano styl dla klikniętego loga */
-    color: #FFFFFF; /* Ustaw kolor na biały */
-}
-
-.logo.clicked:hover { /* Dodano styl dla najechania myszą na kliknięty logo */
-    color: #FFFFFF; /* Ustaw kolor na biały */
 }
 
 .btn-primary {
