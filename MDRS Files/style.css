@@ -9,6 +9,11 @@
     overflow-x: hidden; 
 }
 
+body.lock-scroll {
+    overflow: auto;
+}
+
+
 /* ///////////..utility classes../////////// */
 
 
@@ -72,11 +77,11 @@
     align-items:center;
     background: #1d3862; /*zmien kolor tutaj zeby zobaczyc gdzie jest navbar-container  rgb(167, 38, 38); */  
 }
-
+/*
 .menu-items a:visited {
-    color: inherit; /* Dziedziczy kolor od rodzica */
+    color: #fff; /* Dziedziczy kolor od rodzica 
 }
-
+*/
 .navbar-container a:hover {
     color: #fff;
 }
@@ -191,7 +196,11 @@ button.accept-policy {
 
         .lp-items a:hover {
             color: #cc9f51;
-            transition: color 0.3s ease-in-out;
+            transition: color 0.4s ease-in-out;
+        }
+
+        .lp-items a:visited {
+            color: #fff; /* Dziedziczy kolor od rodzica */
         }
 
 #footer {
@@ -216,24 +225,34 @@ button.accept-policy {
 /* On screens that are 576px wide or less */
 @media screen and (max-width: 576px) {
 
+    body.lock-scroll {
+        overflow-y: hidden;
+        height: 100%;
+        position: fixed;
+        margin:0;
+    }
+
+html.lock-scroll{
+    overflow-y: hidden;
+    position: fixed;
+}
     .navbar {           
         width: 100vw;   
         left:0;
         right:0;        
-        max-width: 100%
+        max-width: 100%;    
+        top:0;    
     }
 
     .navbar-container {
         position: relative;
-        display: block;
-        height: 50px;
+        display: block;        
         width: 100%;
-        background: #1d3862; /*zmien kolor tutaj zeby zobaczyc gdzie jest navbar-container  rgb(167, 38, 38); */
+        background: #1d3862; 
         padding-right: 0;
         padding-left: 0;
     }
-    
-
+        
         .navbar-container input[type="checkbox"] {
             position: absolute;
             display: block;
@@ -386,17 +405,7 @@ button.accept-policy {
 }
 
 
-
-
-
-
 /* Site.css classes */
-
-
-
-
-
-
 
 
 .html {
@@ -423,13 +432,14 @@ body {
     font-weight: 400;
     font-variant-numeric: lining-nums;
     /*line-height: 1.4;*/
-    padding: 0.0px;
+    padding: 0;
     margin: 0;    
     text-rendering: optimizeSpeed;   
     width: 100%;
     height: 100%;        
     overflow-x: hidden;      
 }
+
 
 .hidden {
     display: none;
