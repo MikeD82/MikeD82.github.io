@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="MDRS Michal Drazek">
+    <meta name="description" content="MDRS Geodezja i Planowanie Przestrzenne w Rzeszowie.">
+    <meta name="url" content="https://www.mdrs.pl/PL/Onas">
+    <title>MDRS</title>        
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@800&family=Chivo:wght@700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JGW08PZGN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-8JGW08PZGN');
+    </script>
+    <!--End Google tag (gtag.js) -->
+
+</head>
+
+<body>
+   
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class=" navbar-container container">                    
+                <input type="checkbox" class="x" id="menu-toggle" onclick="stopScrollingBody()">                 
+                  <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>                     
+                <ul class="menu-items">
+                    <li><a href="index.html#About" onclick="toggleMenuAndScrollToAbout()">O nas</a></li>                    
+                    <li><a href="Services.html">Usługi</a></li>
+                    <li><a href="Contact.html">Kontakt</a></li>
+                </ul>
+                <a href="index.html" class="h2 logo" id="logo">MDRS</a>                  
+            </div>
+        </nav>
+    </header>
+
+<!-- Main  -->
+
+
+<section id="services">
+    <div class="containerXwide head-services">
+        <h2>
+            Usługi
+        </h2>
+    </div>
+        <br />
+        <br />                              
+        <br />
+        <br />
+   <div class="container">
+     <div class="row">
+         <div class="col-md-12">
+             <div class="services-intro-text animated-element_SR">
+                <div class="services-head-wrapper">
+                 <h4>Nasza oferta stanowi komplementarny zestaw usług związanych z gospodarowaniem nieruchomościami </h4>
+                 </div>              
+             </div>
+         </div>
+     </div>
+      <div class="row services-grid">
+
+            <div class="col-md-6 ">
+                <div class="services-BlockWrap animated-element_SR">
+                    <div class="services-image ">
+                        <a href="Spatial_Planning.html">
+                            <img loading="lazy" src="https://i.postimg.cc/mrZqmCB3/IMGP9735-800x600.png" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="services-rectangle">
+                        <div class="services-rectangle-text">
+                            <h2>
+                                <a href="Spatial_Planning.html">Planowanie Przestrzenne</a>
+                            </h2>
+                            <p>
+                                Plany Ogólne i Miejscowe Plany Zagospodarowania
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6"> 
+                <div class="services-BlockWrap animated-element_SR">
+                    <div class="services-image ">
+                        <a href="Analysis.html">
+                            <img src="https://i.postimg.cc/fW5WHZ9F/Spatial-Analysis-800x600.jpg" class="img-fluid">
+                         </a>
+                    </div>
+                    <div class="services-rectangle">
+                         <div class="services-rectangle-text">
+                        <h2>
+                            <a href="Analysis.html">Analizy</a>
+                        </h2> 
+                        <p>
+                             Analizy Rynku Nieruchomości
+                        </p> 
+                        </div>
+                     </div>
+                </div>
+         </div>
+      </div>      
+    </div>
+</section>
+
+<!-- Main End    -->
+
+<section id="last-paragraph">
+    <div class="container">
+        <ul class="lp-items">
+            <li><a href="index.html#About" class="lp-list">O nas</a></li>                
+            <li><a href="Services.html" class="lp-list">Usługi</a></li>
+            <li><a href="Data_Privacy_Notice.html" class="lp-list">Polityka Prywatności</a></li>
+            <li><a href="Cookies_Policy.html" class="lp-list">Polityka Cookies</a></li>
+            <li><a href="Contact.html" class="lp-items">Kontakt</a></li>
+        </ul>
+    </div>
+</section>
+<footer class="footer">
+    <p id="copyrightParagraph"></p>
+</footer>
+
+<script src="/lib/jquery/dist/jquery.min.js"></script>  
+<script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>      
+<script src="js/navb_scroll.js"></script>           
+<script src="js/animated_element.js"></script>  
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> 
+<script src="/js/animated_element_scroll_reveal_lib.js"></script>  
+<script src="js/accordion_content_open.js"></script>
+<script src="js/copyright_paragraph.js"></script>    
+<script src="js/toggleMenuAndScrollToAbout.js"></script>
+<script src="js/ScrollToAbout.js"></script>
+<script src="js/StopScrollingBody.js"></script>
+<script src="/js/trackScroll.js"></script>
+
+<!--<script src="/js/equal_about_rectangle.js"></script> -->
+
+    
+</body>
+</html>
