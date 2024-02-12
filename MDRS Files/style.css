@@ -27,30 +27,7 @@ body.lock-scroll {
     /*increase width as per your need*/
     max-width: 100%;
 }
-/*
-.btn {
-    display: inline-block;
-    padding: 0.23em 0.7em;
-    text-decoration: none;
-    cursor: pointer;
-    outline: #2e5584;;
-    margin-top: 1em;
-    text-transform: uppercase;
-    font-weight:300;
-    border:none;
-    border-radius:0px;
-}
 
-.btn-primary {
-    color: #fff;
-    background: #223d5e;
-}
-
-    .btn-primary:hover {
-        background: #2e5584;
-        transition: background 0.3s ease-in-out;
-    }
-  */  
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
     display: none;
