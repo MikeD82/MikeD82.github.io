@@ -7,6 +7,7 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    scroll-behavior: smooth;
 }
 
 body.lock-scroll {
@@ -27,34 +28,12 @@ body.lock-scroll {
     /*increase width as per your need*/
     max-width: 100%;
 }
-/*
-.btn {
-    display: inline-block;
-    padding: 0.23em 0.7em;
-    text-decoration: none;
-    cursor: pointer;
-    outline: #2e5584;;
-    margin-top: 1em;
-    text-transform: uppercase;
-    font-weight:300;
-    border:none;
-    border-radius:0px;
-}
 
-.btn-primary {
-    color: #fff;
-    background: #223d5e;
-}
-
-    .btn-primary:hover {
-        background: #2e5584;
-        transition: background 0.3s ease-in-out;
-    }
-  */  
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
-    display: none;
+    display: none;    
 }
+
 
     .navbar {   
     position: fixed;
@@ -622,7 +601,8 @@ body {
     font-size: 2.3rem;
     font-weight: 400;
     line-height: 1.2;
-    padding: 4.5rem 4rem 6.5rem 4rem;    
+    padding: 4.5rem 4rem 6.5rem 4rem;   
+    margin: 0 20px 0 20px;
 }
 
 
@@ -944,6 +924,12 @@ body {
     background: #ffff;
 }
 
+.head-services{
+    display: flex;
+    align-items: center;
+}
+
+
 .head-services h2 {
     font-family: 'Tinos','calluna','Times New Roman',sans-serif;
     font-size: 3.0rem;
@@ -990,7 +976,8 @@ body {
     font-family: 'Source Sans Pro',sans-serif;
     font-weight: 300;
     font-size: 1.8rem;
-    line-height: 1.35;          
+    line-height: 1.35;
+    margin:0 20px 0 20px;          
 }
 
 .services-rectangle {
@@ -1150,18 +1137,25 @@ body {
 }
 
 /* ---------------------------------*/
-* Style for the accordion container */
+/* Style for the accordion container */
+
+.accordions{
+    margin: 0 20px 0 20px;
+}
+
 .accordion {
-    max-width: 600px; /* Adjust the width as needed */
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0;
+    max-width: 45rem;
 }
 
 /* Style for each accordion item */
 details {
-    margin-bottom: 10px;
-   /* border-radius: 5px;
-    border: 1px solid #ccc;*/
+    margin-bottom: 10px;   
 }
 
 /* Style for the accordion summary */
@@ -1176,15 +1170,6 @@ summary {
 
 /* Style for the expanded accordion content */
 
-.accordion {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 45rem;
-}
 
     .accordion:first-of-type .accordionSummary {
         border-top: 0.0625rem solid #d1d3d5;
@@ -1650,6 +1635,9 @@ li.bulletpointfirst::marker {
     transform: translateZ(-1px);
 }
 
+.text-contact{
+    margin: 0 20px 0 20px;
+}
 .text-contact h3 {
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 1.8rem;
