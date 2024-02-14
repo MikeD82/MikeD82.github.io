@@ -1017,6 +1017,9 @@ body {
     text-underline-offset: 0.3rem;
 }
 
+.services-rectangle-text a:visited {
+    color: #1d3862; /* Dziedziczy kolor od rodzica*/
+}
 
 .services-rectangle p {
     font-size: 1.1rem;
@@ -1033,16 +1036,17 @@ body {
     padding: 0 0 50%;
     flex: 0 0 auto;  
 }
-    .services-image img {
+
+.services-image img {
         transition: transform 0.3s ease-out; 
-        width: 100%; /* Aby zdjęcie wypełniło kontener */          
+        width: 100%;  /*Aby zdjęcie wypełniło kontener*/        
     }
 
     .services-image:hover img {
         transform: scale(1.1);
     }
 
-
+/*----*/
 .services-BlockWrap {
     padding: 0 20px 0  20px;
     background-color: #fff;
@@ -1185,7 +1189,7 @@ summary {
 
 
     .accordionSummary::after, .accordionSummary ::before {
-        box-sizing: border-box;
+       box-sizing: border-box; 
     }
 
     .accordionSummary::before {
@@ -1202,7 +1206,6 @@ summary {
     .accordionSummary:hover::before {        
         background-color:  #8a1e41; 
     }
-
 
         .accordionSummary::after {
             transition: ease-out transform .5s;
@@ -1222,12 +1225,11 @@ summary {
         transition: text-decoration .5s ease-out, color .5s ease-out;
         color: #8a1e41;        
     }
-    
+        
     .accordionSummary:hover .accordionSummaryIcon {
         transition: fill .5s ease-out;  
         color: #8a1e41;        
     }
-
 
 .accordionSummaryWrap {
     position: relative;
@@ -1246,7 +1248,6 @@ summary {
     border: 0;
     background-color: transparent;    
 }
-
 
 .accordionSummaryText {
     font-family: "Source Sans Pro",sans-serif;
@@ -1273,7 +1274,6 @@ summary {
     margin: 0 0 0 0.625rem;
     transform: rotate(0deg);
 }
-
 
     .accordionSummaryIcon svg {
         position: absolute;
@@ -1499,7 +1499,7 @@ summary {
 }
 
 ol.cookies-policy-pointlist {
-    margin-left: 20px;
+    margin-left: 0px;
     font-size: 1.20rem;
     font-weight: 300;
     letter-spacing: 0rem;
@@ -1547,7 +1547,7 @@ li.point {
 }
 
 ol.data-privacy-policy-pointlist {
-    margin-left: 20px;
+    margin-left: 0px;
     font-size: 1.20rem;
     font-weight: 300;
     letter-spacing: 0rem;
@@ -1814,15 +1814,7 @@ li.bulletpointfirst::marker {
     .image-right {
         height: 20rem;
     }
-
-    /*Services*/
-    
-    .services-image img {        
-        /*height: 15rem;*/        
-    }
-
-
-
+          
     /* Our Philosophy*/
 
     .head-philosophy img {
@@ -1847,14 +1839,19 @@ li.bulletpointfirst::marker {
     /*  ......  Services.........*/
 
     #spatial-planning .spatial-planning-items-text p {
-
-        color: #4c4a47;
-       
+        color: #4c4a47;       
     }
+
+    .head-services::before{
+        width: calc(0.54*100vw);
+    }    
 
 
     /* ........ Contact Us........... */
-
+ 
+    .head-contact::before {
+        width: calc(0.54*100vw);
+    }
 
     .contact-container {
         display: flex;
@@ -1901,11 +1898,6 @@ li.bulletpointfirst::marker {
     .image-right {
         height: 25rem;
     }
-/*Services*/
-    
-.services-image img {        
-    /*height: 20rem;  */
-}
 
 
     /*......... Our Philosophy........... */
@@ -1916,9 +1908,7 @@ li.bulletpointfirst::marker {
 
     /*  ......  Services.........*/
 
-    #spatial-planning .spatial-planning-items-text p {
-        color: #4c4a47;
-    }
+    
 
 
     /* ........ Contact Us........... */
@@ -1970,12 +1960,6 @@ li.bulletpointfirst::marker {
         height: 25rem;
     }
 
-/*Services*/
-    
-.services-image img {        
-    /*height: 20rem;*/        
-}
-
     /*......... Our Philosophy........... */
 
     .quoteblock {
@@ -2017,12 +2001,6 @@ li.bulletpointfirst::marker {
     .image-right {
         height: 25rem;
     }
-
-/*Services*/
-    
-.services-image img {        
-    /*height: 20rem; */     
-}
 
     /*......... Our Philosophy........... */
 
