@@ -1017,9 +1017,6 @@ body {
     text-underline-offset: 0.3rem;
 }
 
-.services-rectangle-text a:visited {
-    color: #1d3862; /* Dziedziczy kolor od rodzica*/
-}
 
 .services-rectangle p {
     font-size: 1.1rem;
