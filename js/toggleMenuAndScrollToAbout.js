@@ -11,7 +11,7 @@ function toggleMenuAndScrollToAbout() {
     // Sprawdź szerokość ekranu
     if (window.innerWidth < 576) {
     
-        if (window.location.href =='index')
+        if (window.location.href =='./')
         {
           // Przewiń do sekcji "#About" tylko na ekranach o szerokości mniejszej niż 576 pikseli
            var aboutSection = document.getElementById('Onas');
@@ -23,7 +23,7 @@ function toggleMenuAndScrollToAbout() {
         else
         {
        // Define the URL of the page you want to navigate to
-          var targetPageUrl = 'index';
+          var targetPageUrl = './';
        // Define the section identifier you want to navigate to
           var sectionId = 'Onas';
         // Combine the URL with the section identifier as a hash
