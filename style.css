@@ -177,11 +177,7 @@ button.accept-policy {
             color: #cc9f51;
             transition: color 0.4s ease-in-out;
         }
-
-        .lp-items a:visited {
-            color: #fff; /* Dziedziczy kolor od rodzica */
-        }
-
+        
 #footer {
     position: relative;
     width: 100%;
@@ -190,8 +186,7 @@ button.accept-policy {
 
 .footer p {
     text-align: right;
-    font-family: 'Roboto Condensed','Arial Narrow','Amplitude','Source Sans Pro',sans-serif;
-    /*letter-spacing:0rem;*/
+    font-family: 'Roboto Condensed','Arial Narrow','Amplitude','Source Sans Pro',sans-serif;    
     font-size: 0.8rem;
     padding: 2.2rem;
     font-weight: 300;
