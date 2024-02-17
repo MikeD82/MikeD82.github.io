@@ -11,10 +11,10 @@ function toggleMenuAndScrollToAbout() {
     // Sprawdź szerokość ekranu
     if (window.innerWidth < 576) {
     
-        if (window.location.href =='index.html')
+        if (window.location.href =='index')
         {
           // Przewiń do sekcji "#About" tylko na ekranach o szerokości mniejszej niż 576 pikseli
-           var aboutSection = document.getElementById('About');
+           var aboutSection = document.getElementById('Onas');
            aboutSection.scrollIntoView({ behavior: 'smooth' });
            checkbox.checked = false;    
            document.getElementById("navbar").style.top = "-60px";
@@ -23,9 +23,9 @@ function toggleMenuAndScrollToAbout() {
         else
         {
        // Define the URL of the page you want to navigate to
-          var targetPageUrl = 'index.html';
+          var targetPageUrl = 'index';
        // Define the section identifier you want to navigate to
-          var sectionId = 'About';
+          var sectionId = 'Onas';
         // Combine the URL with the section identifier as a hash
         var targetUrlWithHash = targetPageUrl + '#' + sectionId;
 
