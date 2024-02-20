@@ -84,8 +84,9 @@
            <div class="row">
                <div class="col-md-4 ">        
                   <div class="contact-rectangle animated-element_SR">
-                    <h4>Kontakt telefoniczny</h4>
-                    <p>&#9990 +48 665 188 941</p>
+                    <h4>Kontakt</h4>
+                    <p>&#9990 +48 665 188 941 <br> &#9993   biuro@mdrs.pl</p>
+                    
                  </div>
                </div>
            </div>
@@ -96,16 +97,32 @@
             </div>
 
             <div class="form-container">
-                <h4>Jak możemy Ci pomóc?</h4>
-                <input type="text" placeholder="Twoje imię i nazwisko" />
-                <input type="email" placeholder="e-mail" />
-                <textarea cols="30"
+
+              <!-- Web3Form   -->
+                <form  method="POST" id="form">
+
+                    <input type="hidden" name="access_key" value="5bef1b56-7a28-4558-b99e-a2d3567c5ce8">
+                
+                      <h4>Jak możemy Ci pomóc?</h4>
+                    <input type="text" placeholder="Twoje imię i nazwisko"  name="name" required>
+                    <input type="email" placeholder="e-mail" name="email" required>
+                    <textarea cols="30"
                           rows="6"
-                          placeholder="Wpisz wiadomość"></textarea>
-                <a href="./ConstructionWorksFiles/UnderConstruction.html" class="btn btn-outline-secondary">Wyślij</a>
+                          placeholder="Wpisz wiadomość"
+                          name="message"  required></textarea>
+                    <div class="form-container-btn-result">  
+                         <button  class="btn btn-outline-secondary" type="submit">Wyślij</button>
+                         <div class="form-container-result" id="result"></div> 
+                    </div>
+                </form>
+
+
             </div>
         </div>
 </section>
+
+
+
 
 
 
@@ -138,6 +155,10 @@
 <script src="js/ScrollToAbout.js"></script>
 <script src="js/StopScrollingBody.js"></script>
 <script src="/js/trackScroll.js"></script>
+
+<script src="js/contactFormResult.js"></script>
+
+<script src="/js/clearContactForm.js"></script>
 
 <!--<script src="/js/equal_about_rectangle.js"></script> -->
 
