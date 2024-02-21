@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="MDRS Michal Drazek">
-    <meta name="description" content="MDRS Geodezja i Planowanie Przestrzenne w Rzeszowie.">
-    <meta name="url" content="https://www.mdrs.pl/PL/Onas">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content="MDRS Michał Drążek">
+    <meta name="description" content="MDRS Urbanistyka i Planowanie Przestrzenne w Rzeszowie.">
+    <meta name="url" content="https://www.mdrs.pl">
     <title>MDRS</title>        
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,8 +84,9 @@
            <div class="row">
                <div class="col-md-4 ">        
                   <div class="contact-rectangle animated-element_SR">
-                    <h4>Kontakt telefoniczny</h4>
-                    <p>&#9990 +48 665 188 941</p>
+                    <h4>Kontakt</h4>
+                    <p>&#9990 +48 665 188 941 <br> &#9993   biuro@mdrs.pl</p>
+                    
                  </div>
                </div>
            </div>
@@ -96,16 +97,32 @@
             </div>
 
             <div class="form-container">
-                <h4>Jak możemy Ci pomóc?</h4>
-                <input type="text" placeholder="Twoje imię i nazwisko" />
-                <input type="email" placeholder="e-mail" />
-                <textarea cols="30"
+
+              <!-- Web3Form   -->
+                <form  method="POST" id="form">
+
+                    <input type="hidden" name="access_key" value="5bef1b56-7a28-4558-b99e-a2d3567c5ce8">
+                
+                      <h4>Jak możemy Ci pomóc?</h4>
+                    <input type="text" placeholder="Twoje imię i nazwisko"  name="name" required>
+                    <input type="email" placeholder="e-mail" name="email" required>
+                    <textarea cols="30"
                           rows="6"
-                          placeholder="Wpisz wiadomość"></textarea>
-                <a href="./ConstructionWorksFiles/UnderConstruction" class="btn btn-outline-secondary">Wyślij</a>
+                          placeholder="Wpisz wiadomość"
+                          name="message"  required></textarea>
+                    <div class="form-container-btn-result">  
+                         <button id="contactButton" class="btn btn-outline-secondary" type="submit" data-toggle="button" aria-pressed="true" autocomplete="on">Wyślij</button>
+                         <div class="form-container-result" id="result"></div> 
+                    </div>
+                </form>
+
+
             </div>
         </div>
 </section>
+
+
+
 
 
 
@@ -136,6 +153,8 @@
 <script src="js/toggleMenuAndScrollToAbout.js"></script>
 <script src="js/ScrollToAbout.js"></script>
 <script src="js/StopScrollingBody.js"></script>
-
+<script src="/js/trackScroll.js"></script>
+<script src="js/contactFormResult.js"></script>
+    
 </body>
 </html>

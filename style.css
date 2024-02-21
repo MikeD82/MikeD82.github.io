@@ -443,7 +443,7 @@ body {
     text-transform: uppercase;
     font-weight: 300;
     border-radius: 0px;
-    color: #223d5e;
+    color: #223d5e;    
 }
 
 .btn-outline-secondary {
@@ -458,10 +458,11 @@ body {
         color: #223d5e;
         border-color: #cc9f51;
     }
+    
+
 
 
 /* ............//// Showcase styling ////......... */
-
 
 
 .showcase-wrapper {    
@@ -1748,6 +1749,26 @@ li.bulletpointfirst::marker {
     .form-container a {
         font-size: 1.1rem;
     }
+
+    .form-container-btn-result{
+        display: flex;
+        align-items: center;               
+    }
+
+
+    #result{                       
+        /*background-color: #f0f0f0; /* Ustawienie koloru tła         
+        padding: 1rem; /* Dodanie wewnętrznego odstępu */
+        font-size: 0.95rem;
+        margin-top: 1em;
+        margin-left : auto;
+        margin-right: 0;        
+        width: 80%;        
+        color: #8a1e41;                                      
+        font-weight: 400;        
+        height: auto;               
+    }
+    
 
 ::placeholder { /* Natywnie we wszyskich przegl�darkach kolor tekstu placeholdera jest szary!!!*/ /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #2e3e80;
