@@ -1,5 +1,6 @@
 const form = document.getElementById('form');
 const result = document.getElementById('result');
+const button = document.getElementById('contactButton');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
@@ -20,18 +21,21 @@ form.addEventListener('submit', function(e) {
             let json = await response.json();
             if (response.status == 200) {
                 result.innerHTML = "Dziękujemy za przesłanie wiadomości!";
+                
             } else {
                 console.log(response);
-                result.innerHTML = json.message;
+                result.innerHTML = json.message;                
             }
         })
         .catch(error => {
             console.log(error);
-            result.innerHTML = "Coś poszło źle!";
+            result.innerHTML = "Coś poszło źle!";            
+            button.blur(); // wyłącznie focusa buttona
         })
         .then(function() {
-            form.reset();
+            form.reset();            
             setTimeout(() => {
+                button.blur();   // wyłącznie focusa buttona
                 result.style.display = "none";
             }, 3000);
         });

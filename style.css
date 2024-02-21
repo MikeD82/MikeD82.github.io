@@ -463,10 +463,11 @@ body {
         color: #223d5e;
         border-color: #cc9f51;
     }
+    
+
 
 
 /* ............//// Showcase styling ////......... */
-
 
 
 .showcase-wrapper {    
@@ -1760,15 +1761,14 @@ li.bulletpointfirst::marker {
     }
 
 
-    #result{
-        font-size: 1.0rem;                
-       /* background-color: #f0f0f0; /* Ustawienie koloru tła 
-        border: 1px solid #ccc; /* Dodanie obramowania 
+    #result{                       
+        /*background-color: #f0f0f0; /* Ustawienie koloru tła         
         padding: 1rem; /* Dodanie wewnętrznego odstępu */
+        font-size: 0.95rem;
         margin-top: 1em;
         margin-left : auto;
         margin-right: 0;        
-        width: 60%;        
+        width: 80%;        
         color: #8a1e41;                                      
         font-weight: 400;        
         height: auto;               
