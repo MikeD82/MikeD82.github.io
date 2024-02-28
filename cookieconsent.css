@@ -60,9 +60,7 @@
   font-weight: inherit;
 }
 :root {
-  --cc-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  --cc-font-family: 'Roboto Condensed', 'Arial Narrow', 'Amplitude', sans-serif;    
   --cc-modal-border-radius: 0rem;
   --cc-btn-border-radius: 0rem;
   --cc-modal-transition-duration: 0.25s;
@@ -70,15 +68,15 @@
   --cc-modal-margin: 1rem;
   --cc-z-index: 2147483647;
   --cc-bg: #fff;
-  --cc-primary-color: #2c2f31;
+  --cc-primary-color: #2e3e80;
   --cc-secondary-color: #5e6266;
-  --cc-btn-primary-bg: #30363c;
+  --cc-btn-primary-bg: #223d5e;
   --cc-btn-primary-color: #fff;
   --cc-btn-primary-border-color: var(--cc-btn-primary-bg);
-  --cc-btn-primary-hover-bg: #000;
+  --cc-btn-primary-hover-bg: #cc9f51;
   --cc-btn-primary-hover-color: #fff;
   --cc-btn-primary-hover-border-color: var(--cc-btn-primary-hover-bg);
-  --cc-btn-secondary-bg: #eaeff2;
+  --cc-btn-secondary-bg: #efecea;
   --cc-btn-secondary-color: var(--cc-primary-color);
   --cc-btn-secondary-border-color: var(--cc-btn-secondary-bg);
   --cc-btn-secondary-hover-bg: #d4dae0;
