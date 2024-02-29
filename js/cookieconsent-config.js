@@ -82,21 +82,34 @@ CookieConsent.run({
             services: {
                 ga: {
                     label: 'Google Analytics',
-                    onAccept: () => {},
+                    onAccept: () => {
+                        //
+                        if (cc.allowedCategory("analytics")) {
+                          cc.loadScript(
+                            "https://www.googletagmanager.com/gtag/js?id=G-8JGW08PZGN",
+                            function () {
+                             
+                              window.dataLayer = window.dataLayer || [];
+                              function gtag() {
+                                dataLayer.push(arguments);
+                              }
+                              gtag("js", new Date());
+                  
+                              gtag("config", "G-8JGW08PZGN");
+                            }
+                          );
+                        }
+                        //
+                      },
                     onReject: () => {}
-                },
-                youtube: {
-                    label: 'Youtube Embed',
-                    onAccept: () => {},
-                    onReject: () => {}
-                },
+                },               
             }
         },
         ads: {}
     },
 
     language: {
-        default: 'en',
+        default: 'pl',
         translations: {
             en: {
                 consentModal: {
@@ -139,16 +152,16 @@ CookieConsent.run({
 
             pl: {
                 consentModal: {
-                    title: 'We use cookies',
+                    title: 'Używamy plików cookies',
                     description: 'Cookie modal description',
-                    acceptAllBtn: 'Accept all',
-                    acceptNecessaryBtn: 'Reject all',
-                    showPreferencesBtn: 'Manage Individual preferences'
+                    acceptAllBtn: '  Zaakceptuj  ',
+                    acceptNecessaryBtn: 'Odrzuć wszystkie',
+                    showPreferencesBtn: 'Ustawienia plików cookies'
                 },
                 preferencesModal: {
-                    title: 'Manage cookie preferences',
-                    acceptAllBtn: 'Accept all',
-                    acceptNecessaryBtn: 'Reject all',
+                    title: 'Ustawienia plików cookies',
+                    acceptAllBtn: '  Zaakceptuj  ',
+                    acceptNecessaryBtn: 'Odrzuć wszystkie',
                     savePreferencesBtn: 'Accept current selection',
                     closeIconLabel: 'Close modal',
                     sections: [
@@ -158,14 +171,14 @@ CookieConsent.run({
                         },
                         {
                             title: 'Strictly Necessary cookies',
-                            description: 'These cookies are essential for the proper functioning of the website and cannot be disabled.',
+                            description: 'Pliki cookie są wymagane do działania podstawowych funkcji witryny internetowej. Te pliki cookie są niezbędne do działania naszych witryn internetowych. Te funkcje to m.in. pomiary i ulepszanie wydajności, wykrywanie rozmiaru ekranu, mierzenie czasów ładowania stron, poprawianie działania środowiska użytkownika, personalizowanie kluczowych obszarów środowiska użytkownika oraz analizowanie sposobu użycia witryny. ',
 
                             //this field will generate a toggle linked to the 'necessary' category
                             linkedCategory: 'necessary'
                         },
                         {
                             title: 'Performance and Analytics',
-                            description: 'These cookies collect information about how you use our website. All of the data is anonymized and cannot be used to identify you.',
+                            description: 'Analityczne pliki cookie innych firm umożliwiają zrozumienie, w jaki sposób odwiedzający używają naszą witrynę internetowa. Te pliki służą na przykład do zbierania informacji o podstronach, które odwiedzasz, oraz liczbie kliknięć potrzebnych Ci do wykonania zadania. ',
                             linkedCategory: 'analytics'
                         },
                         {
