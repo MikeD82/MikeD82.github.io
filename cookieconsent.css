@@ -3,7 +3,7 @@
   color: var(--cc-primary-color);
   font-family: var(--cc-font-family);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.15;
@@ -64,11 +64,12 @@
   --cc-modal-border-radius: 0rem;
   --cc-btn-border-radius: 0rem;
   --cc-modal-transition-duration: 0.25s;
-  --cc-link-color: var(--cc-btn-primary-bg);
+  --cc-link-color: #223d5e;
+  --cc-link-hover-color: #8a1e41;
   --cc-modal-margin: 1rem;
   --cc-z-index: 2147483647;
   --cc-bg: #fff;
-  --cc-primary-color: #2e3e80;
+  --cc-primary-color: #223d5e;
   --cc-secondary-color: #5e6266;
   --cc-btn-primary-bg: #223d5e;
   --cc-btn-primary-color: #fff;
@@ -79,26 +80,26 @@
   --cc-btn-secondary-bg: #efecea;
   --cc-btn-secondary-color: var(--cc-primary-color);
   --cc-btn-secondary-border-color: var(--cc-btn-secondary-bg);
-  --cc-btn-secondary-hover-bg: #d4dae0;
-  --cc-btn-secondary-hover-color: #000;
-  --cc-btn-secondary-hover-border-color: #d4dae0;
-  --cc-separator-border-color: #f0f4f7;
+  --cc-btn-secondary-hover-bg: #cc9f51;
+  --cc-btn-secondary-hover-color:  #fff;
+  --cc-btn-secondary-hover-border-color: #efecea;
+  --cc-separator-border-color: #efecea;
   --cc-toggle-on-bg: var(--cc-btn-primary-bg);
-  --cc-toggle-off-bg: #667481;
+  --cc-toggle-off-bg: #d3cbc5;
   --cc-toggle-on-knob-bg: #fff;
   --cc-toggle-off-knob-bg: var(--cc-toggle-on-knob-bg);
   --cc-toggle-enabled-icon-color: var(--cc-bg);
   --cc-toggle-disabled-icon-color: var(--cc-bg);
-  --cc-toggle-readonly-bg: #d5dee2;
+  --cc-toggle-readonly-bg: #d3cbc5;
   --cc-toggle-readonly-knob-bg: #fff;
   --cc-toggle-readonly-knob-icon-color: var(--cc-toggle-readonly-bg);
   --cc-section-category-border: var(--cc-cookie-category-block-bg);
-  --cc-cookie-category-block-bg: #f0f4f7;
-  --cc-cookie-category-block-border: #f0f4f7;
-  --cc-cookie-category-block-hover-bg: #e9eff4;
-  --cc-cookie-category-block-hover-border: #e9eff4;
+  --cc-cookie-category-block-bg: #efecea;
+  --cc-cookie-category-block-border: #efecea;
+  --cc-cookie-category-block-hover-bg: transparent;
+  --cc-cookie-category-block-hover-border: #efecea;
   --cc-cookie-category-expanded-block-bg: transparent;
-  --cc-cookie-category-expanded-block-hover-bg: #dee4e9;
+  --cc-cookie-category-expanded-block-hover-bg: transparent;
   --cc-overlay-bg: rgba(0, 0, 0, 0.65);
   --cc-webkit-scrollbar-bg: var(--cc-section-category-border);
   --cc-webkit-scrollbar-hover-bg: var(--cc-btn-primary-hover-bg);
@@ -115,7 +116,7 @@
 #cc-main b,
 #cc-main em,
 #cc-main strong {
-  font-weight: 600;
+  font-weight: 400;
 }
 #cc-main button > span {
   pointer-events: none;
@@ -133,7 +134,7 @@
 #cc-main .cc__link:hover,
 #cc-main a:hover {
   background-size: 100% 1px;
-  color: var(--cc-primary-color);
+  color: var(--cc-link-hover-color);
 }
 #cc-main .cc__link {
   color: var(--cc-link-color);
@@ -735,8 +736,8 @@ html.disable--interaction.show--consent body {
   margin-right: 2em;
 }
 #cc-main .pm__close-btn {
-  background: var(--cc-btn-secondary-bg);
-  border: 1px solid var(--cc-btn-secondary-border-color);
+  background: transparent;
+  border: 1px solid transparent;
   border-radius: var(--cc-btn-border-radius);
   height: 40px;
   position: relative;
@@ -754,11 +755,11 @@ html.disable--interaction.show--consent body {
   transition: stroke 0.15s ease;
 }
 #cc-main .pm__close-btn:hover {
-  background: var(--cc-btn-secondary-hover-bg);
-  border-color: var(--cc-btn-secondary-hover-border-color);
+  background: transparent;
+  border-color: transparent;
 }
 #cc-main .pm__close-btn:hover svg {
-  stroke: var(--cc-btn-secondary-hover-color);
+  stroke: var(--cc-btn-secondary-hover-bg);
 }
 #cc-main .pm__body {
   flex: 1;
@@ -795,8 +796,8 @@ html.disable--interaction.show--consent body {
   transition: none;
 }
 #cc-main .pm__section:not(:first-child):hover {
-  background: var(--cc-cookie-category-block-bg);
-  border-color: var(--cc-cookie-category-block-border);
+  background: var(--cc-cookie-category-block-hover-bg);
+  border-color: var(--cc-cookie-category-block-hover-border);
 }
 #cc-main .pm__section-toggles + .pm__section {
   margin-top: 2em;
@@ -847,7 +848,7 @@ html.disable--interaction.show--consent body {
   padding-left: 3.4em;
 }
 #cc-main .pm__section--expandable .pm__section-arrow {
-  background: var(--cc-toggle-readonly-bg);
+  background: var(--cc-cookie-category-block-bg);
   border-radius: 100%;
   display: flex;
   height: 20px;
