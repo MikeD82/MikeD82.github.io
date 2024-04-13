@@ -4,6 +4,7 @@
  * Author Orest Bida
  * Released under the MIT License
  */
+
 var e, t;
 (e = this),
   (t = function (e) {
